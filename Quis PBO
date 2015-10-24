@@ -1,0 +1,81 @@
+public class javalingkaran {
+    public double hasil;
+    public double javalingkaran (int jari){
+        hasil = 3.14*jari*jari;
+        return hasil;
+    }
+    
+}
+
+public class lingkaran extends javax.swing.JPanel {
+    javalingkaran wildan4 = new javalingkaran();
+    
+     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        // TODO add your handling code here:
+        Double jari = Double.parseDouble(jTextField1.getText());
+        double hasil=wildan4.javalingkaran ((Double) jari);
+        jLabel2.setText(""+hasil); }
+        
+        
+        public class javaPersegi {
+    public int hasil ;
+    public int javaPersegi (int sisi){
+        hasil = sisi*4;
+        return hasil;
+        }
+        }
+        
+        public class persegi extends javax.swing.JPanel {
+javaPersegi wildan = new javaPersegi();
+
+     // TODO add your handling code here:
+        int sisi = Integer.parseInt(jTextField1.getText());
+     
+        
+        int hasil = wildan.javaPersegi(sisi);
+        jTextField2.setText(""+hasil);}
+        
+        
+        public class javapersegipanjang {
+    public int hasil;
+    public int javapersegipanjang (int panjang,int lebar){
+        hasil = panjang * lebar ;
+        return hasil;
+    }
+    
+}
+public class persegipanjang extends javax.swing.JPanel {
+    javapersegipanjang wildan2 = new javapersegipanjang();
+    
+      private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        // TODO add your handling code here:
+        int panjang,lebar,hasil;
+        
+        panjang = Integer.parseInt(jTextField1.getText());
+        lebar = Integer.parseInt(jTextField2.getText());
+        hasil = wildan2.javapersegipanjang(panjang, lebar);
+        
+        jTextField3.setText(""+hasil);
+    }           
+    
+    
+    public class javasegitiga {
+    public int hasil;
+    public int javasegitiga (int alas,int tinggi){
+        hasil = alas*tinggi/2;
+        return hasil;
+    }
+}
+public class segitiga extends javax.swing.JPanel {
+ javasegitiga wildan3 = new javasegitiga();
+ 
+ private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        // TODO add your handling code here:
+        int alas,tinggi,hasil;
+        
+        alas = Integer.parseInt(jTextField1.getText());
+        tinggi = Integer.parseInt(jTextField2.getText());
+        hasil = wildan3.javasegitiga(alas, tinggi);
+        
+        jTextField3.setText(""+hasil);
+    }      
